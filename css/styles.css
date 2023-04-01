@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* general variables */
+  --boxShadow: 0 0 15px rgb(234, 166, 149);
+  --transition: all 0.5 linear;
+  --border: 2px solid green;
+}
+
+/* abbreviations: ctn = container, 
+  qtn = question */
+
+body {
+  font-family: "Kumbh Sans", "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  margin: 0px;
+  height: 100vh;
+}
+
+main {
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  display: grid;
+  height: 95%;
+  padding: 200px 0 50px;
+  place-items: center;
+  width: 100vw;
+}
+
+.section-ctn {
+  background-color: rgb(254, 255, 255);
+  border-radius: 30px;
+  display: grid;
+  padding: 25px;
+  place-items: center;
+  width: 375px;
+}
+
+.mobile-img-ctn {
+  margin-top: -155px;
+  width: 90%;
+}
+
+.mobile-img-ctn :last-child {
+  margin-top: -100px;
+  width: 100%;
+}
+
+/* styling FAQs sections */
+.faq-header {
+  text-align: center;
+}
+
+questions {
+  border-radius: 40px;
+  width: 100%;
+}
+
+.qtn-title {
+  border-top: 2px solid hsl(240, 5%, 91%);
+  display: flex;
+  justify-content: space-between;
+}
+
+.qtn1 .qtn-title {
+  border: none;
+}
+
+.qtn5 {
+  border-bottom: 2px solid hsl(240, 5%, 91%);
+}
+
+.arrow-btn,
+h3 {
+  cursor: pointer;
+}
+
+h3 {
+  color: hsl(237, 12%, 33%);
+  font-weight: normal;
+  width: 100%;
+}
+
+h3:hover {
+  color: #eab249;
+}
+
+questions p {
+  color: hsl(240, 6%, 50%);
+  display: none;
+  font-size: 14px;
+  margin-top: 0;
+  padding-right: 20px;
+}
+
+.logo-ctn {
+  display: none;
+}
+
+/* setting media queries for different screen sizes */
+@media screen and (min-width: 300px) {
+  .section-ctn {
+    width: 300px;
+  }
+
+  .mobile-img-ctn {
+    margin-top: -125px;
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .section-ctn {
+    width: 375px;
+  }
+
+  .mobile-img-ctn {
+    margin-top: -157px;
+    width: 90%;
+  }
+
+  .mobile-img-ctn :last-child {
+    margin-top: -100px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    padding: 20px;
+  }
+
+  .section-ctn {
+    align-items: center;
+    display: flex;
+    gap: 50px;
+    height: 380px;
+    justify-content: center;
+    overflow: hidden;
+    padding-left: 0;
+    width: 650px;
+  }
+
+  questions {
+    margin-right: 20px;
+  }
+
+  .faq-header {
+    text-align: left;
+  }
+
+  .mobile-img-ctn {
+    display: none;
+  }
+
+  .logo-ctn {
+    display: grid;
+    margin: 0;
+    place-items: center;
+    position: relative;
+    width: 100%;
+  }
+
+  .logo-ctn img {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .logo {
+    position: absolute;
+  }
+
+  .logo img:first-child {
+    margin-left: -78px;
+    margin-top: 100px;
+    position: fixed;
+    width: 160px;
+    z-index: 1000;
+  }
+
+  .logo img:last-child {
+    margin-left: -70px;
+    margin-top: 0px;
+    width: 370px;
+  }
+
+  .logo-shadow {
+    margin-bottom: 150px;
+    margin-left: -500px;
+    width: 800px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  main {
+    height: 95%;
+  }
+
+  .section-ctn {
+    height: 500px;
+    width: 900px;
+  }
+
+  .logo img:first-child {
+    margin-left: -150px;
+    margin-top: 100px;
+    position: fixed;
+    width: 200px;
+  }
+
+  .logo img:last-child {
+    margin-left: -150px;
+    margin-top: -20px;
+    width: 450px;
+  }
+}
+
+/* classes needed for javascript functionalty */
+.arrow-btn-rotate img {
+  transform: rotate(180deg);
+}
+
+.show-content p {
+  display: block;
+}
+
+.show-content h3 {
+  font-weight: bold;
+}
+
+/* footer styles */
+.attribution {
+  background-color: hsl(228, 59%, 16%);
+  color: white;
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  height: 10%;
+}
+
+.attribution a {
+  color: hsl(51, 79%, 45%);
+  text-decoration: none;
+}

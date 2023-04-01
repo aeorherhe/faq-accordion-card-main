@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>FAQ Accordion Card</title>
+  </head>
+  <body>
+    <main>
+      <!-- abbrviations: ctn = container 
+          img =  image -->
+      <section>
+        <div class="section-ctn">
+          <div class="logo-ctn">
+            <div class="logo">
+              <img src="./images/illustration-box-desktop.svg" alt="" />
+              <img
+                src="./images/illustration-woman-online-desktop.svg"
+                alt=""
+              />
+            </div>
+            <div class="logo-shadow">
+              <img src="./images/bg-pattern-desktop.svg" alt="" />
+            </div>
+          </div>
+          <div class="mobile-img-ctn">
+            <img src="./images/illustration-woman-online-mobile.svg" alt="" />
+            <img src="./images/bg-pattern-mobile.svg" alt="" />
+          </div>
+          <!-- qtn = question -->
+          <!-- start of questions section -->
+          <questions class="qtn-ctn">
+            <h1 class="faq-header">FAQ</h1>
+            <div class="qtns qtn1">
+              <div class="qtn-title">
+                <h3>How many team members can I invite?</h3>
+                <img
+                  class="arrow-btn"
+                  src="./images/icon-arrow-down.svg"
+                  alt=""
+                />
+              </div>
+              <p>
+                You can invite up to 2 additional users on the Free plan. There
+                is no limit on team members for the Premium plan.
+              </p>
+            </div>
+            <div class="qtns">
+              <div class="qtn-title">
+                <h3>What is the maximum file upload size?</h3>
+                <img
+                  class="arrow-btn"
+                  src="./images/icon-arrow-down.svg"
+                  alt=""
+                />
+              </div>
+              <p>
+                No more than 2GB. All files in your account must fit your
+                allotted storage space.
+              </p>
+            </div>
+            <div class="qtns">
+              <div class="qtn-title">
+                <h3>How do I reset my password?</h3>
+                <img
+                  class="arrow-btn"
+                  src="./images/icon-arrow-down.svg"
+                  alt=""
+                />
+              </div>
+              <p>
+                Click “Forgot password” from the login page or “Change password”
+                from your profile page. A reset link will be emailed to you.
+              </p>
+            </div>
+            <div class="qtns">
+              <div class="qtn-title">
+                <h3>Can I cancel my subscription?</h3>
+                <img
+                  class="arrow-btn"
+                  src="./images/icon-arrow-down.svg"
+                  alt=""
+                />
+              </div>
+              <p>
+                Yes! Send us a message and we’ll process your request no
+                questions asked.
+              </p>
+            </div>
+            <div class="qtns qtn5">
+              <div class="qtn-title">
+                <h3>Do you provide additional support?</h3>
+                <img
+                  class="arrow-btn"
+                  src="./images/icon-arrow-down.svg"
+                  alt=""
+                />
+              </div>
+              <p>
+                Chat and email support is available 24/7. Phone lines are open
+                during normal business hours.
+              </p>
+            </div>
+          </questions>
+        </div>
+      </section>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://aeorherhe.netlify.app" target="_blank">Abraham Orherhe</a
+      >.
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
